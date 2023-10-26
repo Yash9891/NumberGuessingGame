@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border:border-box; 
+ 
+    
+}
+body{
+    background-color: white
+}
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color:  white
+}
+.guessgame{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    height: 670px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   border-radius: 4rem;
+   background-color: rgb(47, 49, 49);
+   color: white;
+   margin-bottom: 10px;
+
+}
+.heading{
+    color: rgb(177, 108, 241);
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.fomi{
+    height: 100px;
+
+    margin: 15px;
+}
+.fomi input{
+    border-radius: 0.5rem;
+    padding: 5px;
+    height: 35px;
+    margin-right: 10px;
+    background-color: rgb(159, 246, 246);
+
+}
+.submit{
+  
+    cursor: pointer;
+    font-size:1.2rem;
+    padding: 5px 15px;
+    border-radius: 0.7rem;
+    font-weight: 600;
+    background-color: rgb(222, 130, 255);
+}
+.submit:hover{
+    color: white;
+    background-color: rgb(135, 98, 215);
+}
+.restart{
+    color: rgb(94, 240, 213);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.restart p{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.guessremain{
+    color: yellow;
+}
+.prevGuess{
+    color: rgb(251, 217, 96);
+}
+#newGame{
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(212, 176, 245);
+    color: rgb(67, 20, 111);
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.message{
+    color: rgb(241, 181, 16);
+    font-weight: 800;
+}
+@media only screen and (max-width: 1050px){
+    .guessgame{
+        
+        font-size: 1.3rem;
+        height: 700px;
+        width: 85%;
+       border-radius: 3rem;
+    
+    }
+    .heading{
+       margin-bottom: 70px;
+        font-size: 2.5rem;
+    }
+    .fomi{
+        height: 80px;
+        margin: 15px;
+    }
+    .fomi input{
+        border-radius: 0.5rem;
+        padding: 5px;
+        height: 35px;
+        margin-right: 10px;
+        background-color: rgb(159, 246, 246);
+    
+    }
+   
+    .restart p{
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .prevGuess{
+        color: rgb(251, 217, 96);
+    }
+    
+}
+
+
+@media only screen and (max-width: 380px){
+    .guessgame{
+        
+        font-size: 1rem;
+        height: 550px;
+        width: 90%;
+       border-radius: 3rem;
+    
+    }
+    .heading{
+       margin-bottom: 40px;
+        font-size: 1.5rem;
+    }
+
+    .fomi{
+       
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        margin: 10px;
+    }
+    .fomi input{
+        border-radius: 0.5rem;
+        padding: 3px;
+        height: 35px;
+       
+        margin-bottom:7px ;
+        background-color: rgb(159, 246, 246);
+    
+    }
+    .submit{
+      
+        cursor: pointer;
+        font-size:1rem;
+        padding: 3px 14px;
+        border-radius: 0.7rem;
+
+    }
+    .restart{
+        margin: 10px;
+    }
+    .restart p{
+        font-family: 'Poppins', sans-serif;
+        padding: 5px;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .guessremain{
+        color: yellow;
+    }
+    .prevGuess{
+        color: rgb(251, 217, 96);
+    }
+    #newGame{
+        padding: 10px;
+
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    
+    .message{
+        
+        color: rgb(241, 181, 16);
+        font-weight: 800;
+    }  
+    .message h2{
+        font-size: 0.9rem;
+    }  
+}
