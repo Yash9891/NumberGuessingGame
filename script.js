@@ -22,7 +22,11 @@ if (playGame) {
         } else {
             prevGuesses.push(guess);
             userinput.value = '';
-            prevGuess.innerHTML += `${guess}📍`;
+            let previous=document.createElement('h4')
+            previous.innerText= `${guess} `
+            previous.classList.add('pikka')
+            prevGuess.append(previous)
+
             numGuess++;
             score=score-5;
             guessremain.innerHTML = `${11 - numGuess}`;
@@ -63,7 +67,7 @@ if (playGame) {
                 } else if (guess > randomnumber) {
                     message.innerHTML = '<h2>Your guess is too high <span>🙁</span></h2>';
                 } else {
-                    message.innerHTML = '<h2>Yayyy! Elvissh bayyy You guessed it right <span>😃</span></h2>';
+                    message.innerHTML = '<h2>Congratulations!🌟You guessed it right <span>😃</span></h2>';
                     //end the game
                     userinput.value = '';
                     userinput.setAttribute('disabled', 'true');
@@ -91,5 +95,146 @@ if (playGame) {
             }
         }
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 }
