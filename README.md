@@ -1,2 +1,2 @@
-# Guess the Number 🙄 
-Lets check your guessing powers like Eleven.
+# Guess the Number 
+Check you gussing powers and improve your powers so that can  easily defeat the powers of Eleven.
