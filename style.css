@@ -6,37 +6,45 @@
     
 }
 body{
-    background-color: white
+    background-color: rgba(41, 169, 169, 0.777)
 }
 .game{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    background-color:  white
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgba(41, 169, 169, 0.777)
 }
 .guessgame{
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    height: 670px;
+    height: 700px;
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   border-radius: 4rem;
-   background-color: rgb(47, 49, 49);
+   border-radius: 1rem;
+   background-color: rgb(5, 1, 43);
    color: white;
    margin-bottom: 10px;
+   
 
 }
+
 .heading{
-    color: rgb(177, 108, 241);
+    padding-top: 15px;
+    color: rgb(252, 252, 252);
     text-align: center;
-    margin-bottom: 30px;
+    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3rem;
     font-weight: 700;
+}
+.heading img{
+    padding-top: 7px;
+    padding-bottom: 20px;
 }
 .fomi{
     height: 100px;
@@ -46,8 +54,9 @@ body{
 .fomi input{
     border-radius: 0.5rem;
     padding: 5px;
-    height: 35px;
+    height: 38px;
     margin-right: 10px;
+    border:none;
     background-color: rgb(159, 246, 246);
 
 }
@@ -58,6 +67,7 @@ body{
     padding: 5px 15px;
     border-radius: 0.7rem;
     font-weight: 600;
+    border: none;
     background-color: rgb(222, 130, 255);
 }
 .submit:hover{
@@ -65,7 +75,8 @@ body{
     background-color: rgb(135, 98, 215);
 }
 .restart{
-    color: rgb(94, 240, 213);
+    color: rgb(131, 240, 254);
+    
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -73,6 +84,7 @@ body{
     align-items: center;
 }
 .restart p{
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     padding: 10px;
     font-size: 1.8rem;
@@ -81,21 +93,39 @@ body{
 .guessremain{
     color: yellow;
 }
-.prevGuess{
-    color: rgb(251, 217, 96);
+.restart .prevGuess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(238, 79, 79);
+}
+.restart .pikka {
+    width: 40px; /* Adjust width to change the circle size */
+    height: 40px; /* Adjust height to change the circle size */
+    background-color: rgb(250, 235, 100);
+   
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    font-size: 20px;
+    color: rgb(219, 41, 17);
+    font-weight: 700;
+
 }
 #newGame{
     cursor: pointer;
     padding: 10px;
-    background-color: rgb(212, 176, 245);
-    color: rgb(67, 20, 111);
+    background-color: rgb(221, 196, 245);
+    color: rgb(55, 12, 95);
     font-weight: 700;
     font-size: 2rem;
     border-radius: 1rem;
 }
 
 .message{
-    color: rgb(241, 181, 16);
+    color: rgb(244, 255, 84);
     font-weight: 800;
 }
 @media only screen and (max-width: 1050px){
@@ -104,7 +134,7 @@ body{
         font-size: 1.3rem;
         height: 700px;
         width: 85%;
-       border-radius: 3rem;
+       
     
     }
     .heading{
@@ -144,7 +174,7 @@ body{
         font-size: 1rem;
         height: 550px;
         width: 90%;
-       border-radius: 3rem;
+    
     
     }
     .heading{
@@ -192,6 +222,7 @@ body{
         color: yellow;
     }
     .prevGuess{
+       
         color: rgb(251, 217, 96);
     }
     #newGame{
